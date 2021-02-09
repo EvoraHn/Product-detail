@@ -6,47 +6,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BPB Technologies</title>
         <link rel="stylesheet" href="css/app.css">
-        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/prop.css">
     </head>
 
     <body>
-        <header class="top-bar">
-            <nav class="top-bar-left">
-                <ul class="menu" aria-label="Nombre de la empresa">
-                   
-                    <!--  logo para la pagina opcional
-                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                        <li> <img alt="temporada" src="https://scontent.ftgu3-1.fna.fbcdn.net/v/t1.0-9/144222018_329018681754303_9152699131713457958_n.png?_nc_cat=101&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeHrrmOW6bbKbtEEtZ51-kypbnrqRxW4205ueupHFbjbTthpuMMPWA-VIukoNRs4fx3bm0jI722In9yv8ewMmUGx&_nc_ohc=SmttRg98LnYAX9vwxho&_nc_ht=scontent.ftgu3-1.fna&oh=435b58a5042b23980f62d0a163d080e2&oe=6043683B" class="logo "></li>
-                    -->
-                    <li class=" menu-text">BPB Technologies</li>
-                    
-                    <li><input type="text" placeholder="Acer Nitro 5 2021" maxlength="50" autocomplete="off" value="" class="barraBusqueda">
-                        <button class="boton" >Buscar</button> </li>
-                    
-                    
+        <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+            <div class="title-bar-title">Menu</div>
+        </div>
+          
+        <header class="top-bar" id="responsive-menu" style="background-color: #0c1564">
+            <div class="top-bar-left" >
+                <ul class="menu " style="background-color: #0c1564; color: aliceblue">
+                    <li class="menu-text">BPB Technologies</li>
+                  <li><input class="barraBusqueda" type="search" placeholder="Acer Nitro 5 2021"></li>
+                  <li><button type="button" class="button boton">Buscar</button></li>
                 </ul>
-            </nav>
-
-            <!--
-                 <nav class="top-bar-right">
-                <ul class="menu" aria-label="Nombre de la empresa">
-                    <div class="menu">
-                        <input type="text" placeholder="Acer Nitro 5 2021" maxlength="50" autocomplete="off" value="" >
-                        <button >Buscar</button>
-                    </div>
-                </ul>
-            </nav>
-
-            -->
-           
-            
-            <nav class="top-bar-right">
-                <ul class="menu" aria-label="Navegación de tu Cuenta">
-                    
-                    <li><a href>Crear Cuenta</a></li>
-                    <li><a href>Iniciar</a></li>
-                </ul>
-            </nav>
+              </div>
+            <div class="top-bar-right">
+              <ul class="dropdown menu" data-dropdown-menu style="background-color: #0c1564; color: aliceblue">
+                
+                <li class="has-submenu" style="background-color: #0c1564; color: aliceblue">
+                  <a href="#0"style="color: aliceblue">Cuentas</a>
+                  <ul class="submenu menu vertical" data-submenu style="background-color: #0c1564; color: aliceblue">
+                    <li><a href="#0" style="color: aliceblue">Crear una cuenta</a></li>
+                    <li><a href="#0" style="color: aliceblue">Iniciar Sesión</a></li>
+                  </ul>
+                </li>
+                <li><a href="#nuevosProductos" style="background-color: #0c1564; color: aliceblue">Nuevos Productos</a></li>
+                <li><a href="#masProductos" style="background-color: #0c1564; color: aliceblue">Más Productos</a></li>
+              </ul>
+            </div>
         </header>
 
         <main>
@@ -161,7 +151,7 @@
                             </nav>
                         </section>
                     </div>
-                    <div class="cell ">
+                    <div class="cell " id="nuevosProductos">
                         <h4 >Nuevos Productos</h4>
                         <hr/>
                                 <div class="grid-x grid-margin-x small-up-2 large-up-1 ">
@@ -213,7 +203,7 @@
                   
                 </div>
             </div>
-            <div class="grid-container text-center margin-top-3">
+            <div class="grid-container text-center margin-top-3" id="masProductos">
                 <hr/>
                 <h4>Más Productos </h4>
                 <hr/>
@@ -274,7 +264,7 @@
                         <div class="cell">
                             <div class="card shadow">
                                 <img class="card-image pmas" src="https://www.novicompu.com/12839-large_default/reloj-smart-watch-6.jpg" />
-                                <div class="card-divider">RELOJ SMART WATCH INTELIGENTE, TACTIL, IMPERMEABLE</div>
+                                <div class="card-divider">RELOJ SMART WATCH INTELIGENTE, TACTIL</div>
                                 <div class="card-section">
                                     <div class="text-right margin-bottom-1"><strong>L999.99</strong></div>
                                     <div><a href class="button expanded ">Comprar</a></div>
@@ -294,8 +284,9 @@
 
         </main>
 
-        <footer>
-
+        <footer class="container-fluid  text-center p-5">
+            <p> Eliab Evora &copy; 2021 Desarrollo de Portales Web </p>
+    
         </footer>
 
         <script src="node_modules/jquery/dist/jquery.js"></script>
